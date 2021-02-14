@@ -1,7 +1,7 @@
 package main
 
 import (
-	"debugProm/utils/logProc04"
+	"debugProm/utils/logProc05"
 	"fmt"
 )
 
@@ -19,5 +19,5 @@ func sample(messages chan string) {
 	messages <- "ping"
 }
 func main() {
-	logProc04.Test()
+	logProc05.Test()
 }

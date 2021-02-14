@@ -1,7 +1,7 @@
 package main
 
 import (
-	"debugProm/utils"
+	"debugProm/utils/logProc03"
 	"fmt"
 )
 
@@ -19,6 +19,5 @@ func sample(messages chan string) {
 	messages <- "ping"
 }
 func main() {
-	test()
-	utils.Run()
+	logProc03.Test()
 }

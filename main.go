@@ -1,7 +1,7 @@
 package main
 
 import (
-	"debugProm/utils/jsonParse"
+	"debugProm/utils/gflags"
 	"fmt"
 )
 
@@ -19,5 +19,5 @@ func sample(messages chan string) {
 	messages <- "ping"
 }
 func main() {
-	jsonParse.Json2Struct()
+	gflags.Test1()
 }

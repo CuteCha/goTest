@@ -105,7 +105,8 @@ func Struct2Json() {
 func Json2Struct() {
 	//json字符中的"引号，需用\进行转义，否则编译出错
 	//json字符串沿用上面的结果，但对key进行了大小的修改，并添加了sex数据
-	data := "{\"name\":\"张三\",\"Age\":18,\"high\":true,\"sex\":\"男\",\"CLASS\":{\"naME\":\"1班\",\"GradE\":3}}"
+	//data := "{\"name\":\"张三\",\"Age\":18,\"high\":true,\"sex\":\"男\",\"CLASS\":{\"naME\":\"1班\",\"GradE\":3}}"
+	data := `{"name":"张三","age":18,"high":true,"class":{"name":"1班","grade":3}}`
 	str := []byte(data)
 
 	//1.Unmarshal的第一个参数是json字符串，第二个参数是接受json解析的数据结构。

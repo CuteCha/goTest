@@ -122,3 +122,27 @@ func Json2Struct() {
 	fmt.Println(stu)
 	fmt.Println(*stu.Class)
 }
+
+type User struct {
+	//name string  //fmt.Println(string(userJSON)) 数据无法解析
+	//age  int
+	Name string
+	Age  int
+}
+
+func ULTest() {
+	user := User{"Tom", 18}
+	userJSON, err := json.Marshal(user)
+
+	if err == nil {
+		fmt.Println(string(userJSON))
+	}
+
+	user2 := new(User)
+	err = json.Unmarshal(userJSON, user2)
+
+	if err == nil {
+		fmt.Println(user2)
+		fmt.Println(*user2)
+	}
+}

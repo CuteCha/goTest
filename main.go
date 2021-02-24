@@ -19,5 +19,5 @@ func sample(messages chan string) {
 	messages <- "ping"
 }
 func main() {
-	consumerProductor.Test()
+	consumerProductor.Test2()
 }

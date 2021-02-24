@@ -1,7 +1,7 @@
 package main
 
 import (
-	"debugProm/utils/gflags"
+	"debugProm/utils/consumerProductor"
 	"fmt"
 )
 
@@ -19,5 +19,5 @@ func sample(messages chan string) {
 	messages <- "ping"
 }
 func main() {
-	gflags.Test1()
+	consumerProductor.Test()
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"debugProm/utils/consumerProductor"
+	"debugProm/utils/hnswUsage"
 	"fmt"
 )
 
@@ -19,5 +19,5 @@ func sample(messages chan string) {
 	messages <- "ping"
 }
 func main() {
-	consumerProductor.Test3()
+	hnswUsage.Test2()
 }

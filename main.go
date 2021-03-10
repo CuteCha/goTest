@@ -1,7 +1,7 @@
 package main
 
 import (
-	"debugProm/utils/hnswUsage"
+	"debugProm/utils/logProc06"
 	"fmt"
 )
 
@@ -19,5 +19,5 @@ func sample(messages chan string) {
 	messages <- "ping"
 }
 func main() {
-	hnswUsage.Test2()
+	logProc06.Test()
 }
